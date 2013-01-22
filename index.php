@@ -1,11 +1,18 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/smarty/libs/Smarty.class.php');
+/*
+ * 
+ * This is the first page you come accross in the program.
+ * 
+ */
+ob_start();
 
-$smarty = new Smarty();
+define("FILE_ROOT", getcwd() . '/');
+define('DOC_PATH', getcwd() . '/', false);
+define('SERVER_PATH', $_SERVER['DOCUMENT_ROOT'], false);
+require_once(FILE_ROOT . 'includes/main.php');
 
-$smarty->setTemplateDir($_SERVER['DOCUMENT_ROOT'] . '/grace/templates/');
-$smarty->setCompileDir($_SERVER['DOCUMENT_ROOT'] . '/grace/templates_c/');
+$main = new main(false, false);
+$main->run();  
 
-$smarty->display('hero.tpl');
-
+ob_end_flush();
 ?>
