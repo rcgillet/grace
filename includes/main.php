@@ -22,10 +22,41 @@ class main extends BaseClass {
         $this->appSmarty = new Smarty();
         $this->appSmarty->template_dir = $this->config->template['appTemplateDir'];
         $this->appSmarty->compile_dir = $this->config->template['appCompileDir'];        
+		$this->appSmarty->caching = 0;
+		$this->TemplateSmarty->caching = 0;
     }    
 
     public function run() {  
-        $this->displayPage('index');
+		if(isset($_GET['page'])) {
+			switch($_GET['page']) {
+				case '1':
+					$pageName = 'marketing-narrow';
+					break;
+				case '2':
+					$pageName = 'marketing-alternate';				
+					break;
+				case '3':
+					$pageName = 'carousel';
+					break;
+				case '4':
+					$pageName = 'hero';				
+					break;
+				case '5':
+					$pageName = 'fluid';				
+					break;
+				case '6':
+					$pageName = 'starter-template';				
+					break;				
+				case '7':
+					$pageName = 'signin';				
+					break;				
+				default:
+					$pageName = 'index';									
+			}
+		} else {
+			$pageName = 'index';				
+		}
+		$this->displayPage($pageName);
     }
 
     private function displayPage($mainContent) {

@@ -25,8 +25,15 @@ class config {
             'appCompileDir' => DOC_PATH . '/templates_c',                
 
             'appTemplates'    => array (
-                                    'mainTemplate'  => 'mainTemplate.tpl',
-                                    'index'         => 'index.tpl'
+                                    'mainTemplate'  		=> 'mainTemplate.tpl',
+                                    'index'         		=> 'index.tpl',
+									'marketing-narrow' 		=> 'marketing-narrow.tpl',
+									'fluid' 				=> 'fluid.tpl',
+									'hero'	 				=> 'hero.tpl',
+									'carousel' 				=> 'carousel.tpl',
+									'marketing-alternate'	=> 'marketing-alternate.tpl',
+									'signin' 				=> 'signin.tpl',
+									'starter-template'		=> 'starter-template.tpl'
                                 ),             
 
         );     
