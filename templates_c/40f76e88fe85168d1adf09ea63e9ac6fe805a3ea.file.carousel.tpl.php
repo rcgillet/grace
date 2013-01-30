@@ -1,4 +1,25 @@
-  <head>
+<?php /* Smarty version Smarty-3.1.13, created on 2013-01-30 18:57:30
+         compiled from "C:\xampp\htdocs\grace\templates\carousel.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:12770510925ec19d469-25900909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '40f76e88fe85168d1adf09ea63e9ac6fe805a3ea' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\grace\\templates\\carousel.tpl',
+      1 => 1359568648,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '12770510925ec19d469-25900909',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_510925ec21cba4_61382010',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_510925ec21cba4_61382010')) {function content_510925ec21cba4_61382010($_smarty_tpl) {?>  <head>
     <meta charset="utf-8">
     <title>Carousel Template &middot; Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -200,4 +221,4 @@
         })
       }(window.jQuery)
     </script>
-  </body>
+  </body><?php }} ?>
