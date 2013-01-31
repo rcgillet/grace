@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-01-30 18:57:30
+<?php /* Smarty version Smarty-3.1.13, created on 2013-01-31 14:42:41
          compiled from "C:\xampp\htdocs\grace\templates\carousel.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12770510925ec19d469-25900909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '40f76e88fe85168d1adf09ea63e9ac6fe805a3ea' => 
     array (
       0 => 'C:\\xampp\\htdocs\\grace\\templates\\carousel.tpl',
-      1 => 1359568648,
+      1 => 1359639758,
       2 => 'file',
     ),
   ),
@@ -54,7 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-grace">
           <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
