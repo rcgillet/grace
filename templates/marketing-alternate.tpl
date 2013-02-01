@@ -162,13 +162,13 @@
           <img class="img-circle" data-src="holder.js/140x140">
           <h2>Upcoming Events</h2>
           <p>A calendar that includes field trips, sporting events, planned days off, and other important dates.</p>
-          <p><a class="btn btn-grace" href="#">Calendar &raquo;</a></p>
+          <p><a class="btn btn-grace" href="calendar.html">Calendar &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
           <h2>Location</h2>
           <p>A detailed map of the location of Grace Christian School as well as directions to the school from wherever you may be.</p>
-          <p><a class="btn btn-grace" href="#">Location & Directions &raquo;</a></p>
+          <p><a class="btn btn-grace" href="demos/jquery-google-maps-mobile.html#directions_map">Location & Directions &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">

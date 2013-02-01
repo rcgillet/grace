@@ -152,14 +152,17 @@
         </div>
 
         <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>Upcoming Events</h4>
+          <p>A calendar that includes field trips, sporting events, planned days off, and other important dates.</p>
+          <p><a class="btn btn-grace" href="calendar.html">Calendar &raquo;</a></p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <h4>Location</h4>
+          <p>A detailed map of the location of Grace Christian School as well as directions to the school from wherever you may be.</p>
+          <p><a class="btn btn-grace" href="demos/jquery-google-maps-mobile.html#directions_map">Location & Directions &raquo;</a></p>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <h4>Staff</h4>
+          <p>A list of the Grace Christian School staff that is willing to work with your children on a more personal level.</p>
+          <p><a class="btn btn-grace" href="#">Staff &raquo;</a></p>
         </div>
       </div>
 
