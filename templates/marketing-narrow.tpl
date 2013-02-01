@@ -7,11 +7,33 @@
 
     <!-- Le styles -->
     <link href="bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="bootstrap/docs/assets/css/application.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
         padding-bottom: 40px;
       }
+	  
+	  a {
+		color: hsl(0, 76%, 3%) !important;
+		text-decoration: none;
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		margin: 10px 0;
+		font-family: inherit;
+		font-weight: bold;
+		line-height: 20px;
+		color: #3e0808;
+		text-rendering: optimizelegibility;
+     }
+	 
+	 .nav .dropdown-toggle .caret {
+		margin-top: 6px;
+		border-top-color: hsl(0, 76%, 3%);
+		border-bottom-color: hsl(0, 76%, 3%);
+     }
 
       /* Custom container */
       .container-narrow {
@@ -35,6 +57,13 @@
         font-size: 21px;
         padding: 14px 24px;
       }
+	  
+	  .nav-pills > .active > a,
+	  .nav-pills > .active > a:hover {
+	    color: #ddd !important;
+  	    background-color: transparent;
+	  }
+
 
       /* Supporting marketing content */
       .marketing {
@@ -65,7 +94,7 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-			<li class="active"><a href="#">Home</a></li>
+			<li class="active btn-grace"><a href="http://localhost/grace/?page=4">Home</a></li>
 			<!--<li><a href="#">Current News</a></li>-->
 			<li><a href="#">Contact Us</a></li>
 			<li class="dropdown">
@@ -98,15 +127,15 @@
 				</li>
 			<!--</ul>	-->		
         </ul>
-        <h3 class="muted">Grace Christian School</h3>
+		<h3 style="color: hsl(0, 76%, 3%)">Grace Christian School</h3>
       </div>
 
       <hr>
 
       <div class="jumbotron">
-        <h1>Grace Christian School</h1>
+        <h1 style="font-size: 60px;">Grace Christian School</h1>
         <p class="lead">assisting the home and church, provides a nurturing, Christ-centered, spiritual, academic and physical atmosphere to produce disciples who will have a transforming impact on their world.</p>
-        <a class="btn btn-large btn-success" href="#">Contact Us</a>
+        <a class="btn btn-large btn-grace" href="#">Contact Us</a>
       </div>
 
       <hr>
@@ -136,9 +165,11 @@
 
       <hr>
 
-      <div class="footer">
-        <p>&copy; Company 2012</p>
-      </div>
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>If you have any questions, please contact us at <a href="mailto:grace_christian_defenders@yahoo.com?subject=Website Inquiry">Grace_Christian_Defenders@yahoo.com</a><br /> or call us at 989-793-2129</p>
+      </footer>
 
     </div> <!-- /container -->
 

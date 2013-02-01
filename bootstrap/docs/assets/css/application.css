@@ -344,7 +344,7 @@
   background-image: -o-linear-gradient(top, #670e0e, #0d0101);
   background-image: linear-gradient(#670e0e, #0d0101);
   border-color: #0d0101 #0d0101 hsl(0, 76%, -2%);
-  color: #fff !important;
+  color: #ddd !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
 }
