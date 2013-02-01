@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-01-31 14:42:41
+<?php /* Smarty version Smarty-3.1.13, created on 2013-02-01 16:45:26
          compiled from "C:\xampp\htdocs\grace\templates\carousel.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12770510925ec19d469-25900909%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '40f76e88fe85168d1adf09ea63e9ac6fe805a3ea' => 
     array (
       0 => 'C:\\xampp\\htdocs\\grace\\templates\\carousel.tpl',
-      1 => 1359639758,
+      1 => 1359733524,
       2 => 'file',
     ),
   ),
@@ -62,15 +62,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Grace Christian School</a>
+            <a class="brand" href="http://localhost/grace/?page=2">Grace Christian School</a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">General Information</a></li>
+                    <li><a href="#">Parent Information</a></li> 
+					<li><a href="#">Current News</a></li>
+					<li><a href="#">Location</a></li> 					
+                  </ul>
+                </li>
+				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Students <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Pre-School</a></li>
@@ -80,6 +87,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li><a href="#">Separated link</a></li>
                   </ul>
                 </li>
+			    <li><a href="#contact">Contact</a></li>
               </ul>
 			  <!-- =========Login========== -->
 				<ul class="nav pull-right">
