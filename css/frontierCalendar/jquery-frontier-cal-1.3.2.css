@@ -81,6 +81,7 @@ Style for hover effect on droppable day cells (drag and drop agenda items.)
 .JFrontierCal .JFrontierCal-Day-Cell-Droppable {
 	background-color: #a6c7ff;
 	background-image: none;
+	height: 10px;
 }
 /*
 Style for current date day cell

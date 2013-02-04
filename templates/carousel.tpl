@@ -60,12 +60,12 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Students <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Pre-School</a></li>
-                    <li><a href="#">K-12</a></li>                   
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Elementary</a></li>                   
+					<li><a href="#">High School</a></li>                   				
+					<li><a href="#">Teacher's blogs</a></li>                   
                   </ul>
                 </li>
+				<li><a href="/grace/?page=2">Staff</a></li>
 			    <li><a href="#contact">Contact</a></li>
               </ul>
 			  <!-- =========Login========== -->
@@ -101,7 +101,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Grace Christian School</h1>
-              <p class="lead">Assisting the home and church, provides a nurturing, Christ-centered, spiritual, academic and physical atmosphere to produce disciples who will have a transforming impact on their world.</p>
+              <p class="lead"> partners with parents to educate their children with Christ-centered academic excellence enabling them to impact their world for Jesus Christ.</p>
               <a class="btn btn-large btn-grace" href="#">Sign up today</a>
             </div>
           </div>
@@ -155,9 +155,9 @@
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Staff</h2>
+          <h2>Enrollment</h2>
           <p>A list of the Grace Christian School staff that is willing to work with your children on a more personal level.</p>
-          <p><a class="btn btn-grace" href="#">Staff &raquo;</a></p>
+          <p><a class="btn btn-grace" href="/grace/?page=5">Enrollment &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 

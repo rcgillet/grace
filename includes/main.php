@@ -30,10 +30,10 @@ class main extends BaseClass {
 		if(isset($_GET['page'])) {
 			switch($_GET['page']) {
 				case '1':
-					$pageName = 'marketing-narrow';
+					$pageName = 'carousel';
 					break;
 				case '2':
-					$pageName = 'marketing-alternate';				
+					$pageName = 'staff';				
 					break;
 				case '3':
 					$pageName = 'carousel';
@@ -42,7 +42,7 @@ class main extends BaseClass {
 					$pageName = 'hero';				
 					break;
 				case '5':
-					$pageName = 'fluid';				
+					$pageName = 'enrollment';				
 					break;
 				case '6':
 					$pageName = 'starter-template';				

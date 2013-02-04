@@ -33,7 +33,9 @@ class config {
 									'carousel' 				=> 'carousel.tpl',
 									'marketing-alternate'	=> 'marketing-alternate.tpl',
 									'signin' 				=> 'signin.tpl',
-									'starter-template'		=> 'starter-template.tpl'
+									'starter-template'		=> 'starter-template.tpl',
+									'enrollment'			=> 'Enrollment.tpl',
+									'staff'					=> 'staff.tpl'
                                 ),             
 
         );     
