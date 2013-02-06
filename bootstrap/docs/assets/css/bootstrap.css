@@ -5591,7 +5591,7 @@ a.badge:hover {
 
 .label-success,
 .badge-success {
-  background-color: #468847;
+  background-color: hsl(0, 76%, 3%) !important;
 }
 
 .label-success[href],

@@ -164,7 +164,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">Current News</a></li>
+				<li><a href="http://www.facebook.com/gcsdefenders">Current News</a></li>
 				<li><a href="#contact">General Info</a></li>
 				<li><a href="#contact">Contact Us</a></li>
 				<li class="dropdown">

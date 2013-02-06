@@ -52,7 +52,7 @@
                   <ul class="dropdown-menu">
                     <li><a href="#">General Information</a></li>
                     <li><a href="#">Parent Information</a></li> 
-					<li><a href="#">Current News</a></li>
+					<li><a href="http://www.facebook.com/gcsdefenders">Current News</a></li>
 					<li><a href="#">Location</a></li> 					
                   </ul>
                 </li>
