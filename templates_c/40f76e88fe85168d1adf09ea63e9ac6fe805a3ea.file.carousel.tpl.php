@@ -1,4 +1,25 @@
-
+<?php /* Smarty version Smarty-3.1.13, created on 2013-06-20 04:36:35
+         compiled from "C:\xampp\htdocs\grace\templates\carousel.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:348851bfbfd40a63a3-99293207%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '40f76e88fe85168d1adf09ea63e9ac6fe805a3ea' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\grace\\templates\\carousel.tpl',
+      1 => 1371695769,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '348851bfbfd40a63a3-99293207',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51bfbfd40ee161_70111996',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_51bfbfd40ee161_70111996')) {function content_51bfbfd40ee161_70111996($_smarty_tpl) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -392,3 +413,4 @@
     </script>
   </body>
 </html>
+<?php }} ?>
