@@ -221,8 +221,8 @@ a:focus {
   text-decoration: underline;
 }
 .img-polaroid {
-  padding: 4px;
-  background-color: #fff;
+  padding: 2px;
+  background-color: transparent;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }

@@ -54,14 +54,15 @@ class main extends BaseClass {
 					$pageName = 'index';									
 			}
 		} else {
-			$pageName = 'index';				
+			$pageName = 'carousel';				
 		}
 		$this->displayPage($pageName);
     }
 
     private function displayPage($mainContent) {
-        $this->loadPages($mainContent);           
-        $this->TemplateSmarty->display($this->config->template['appTemplates']['mainTemplate']);
+        include(FILE_ROOT . 'templates/' . $this->config->template['appTemplates'][$mainContent]);
+        // $this->loadPages($mainContent);           
+        // $this->TemplateSmarty->display($this->config->template['appTemplates']['mainTemplate']);
     }
 
     private function loadDetails() {
@@ -76,6 +77,7 @@ class main extends BaseClass {
     private function loadPages($mainContent) {
         $this->TemplateSmarty->assign('page', $this->page);
         $this->TemplateSmarty->assign('mainContent', $this->appSmarty->fetch($this->config->template['appTemplates'][$mainContent])); 
+
     }    
 }
 ?>

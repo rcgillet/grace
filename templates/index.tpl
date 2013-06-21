@@ -1,1 +1,0 @@
-<P>Default Smarty</p>

@@ -25,17 +25,17 @@ class config {
             'appCompileDir' => DOC_PATH . '/templates_c',                
 
             'appTemplates'    => array (
-                                    'mainTemplate'  		=> 'mainTemplate.tpl',
-                                    'index'         		=> 'index.tpl',
-									'marketing-narrow' 		=> 'marketing-narrow.tpl',
-									'fluid' 				=> 'fluid.tpl',
-									'hero'	 				=> 'hero.tpl',
-									'carousel' 				=> 'carousel.tpl',
-									'marketing-alternate'	=> 'marketing-alternate.tpl',
-									'signin' 				=> 'signin.tpl',
-									'starter-template'		=> 'starter-template.tpl',
-									'enrollment'			=> 'Enrollment.tpl',
-									'staff'					=> 'staff.tpl'
+                                    'mainTemplate'  		=> 'mainTemplate.html',
+                                    'index'         		=> 'index.html',
+									'marketing-narrow' 		=> 'marketing-narrow.html',
+									'fluid' 				=> 'fluid.html',
+									'hero'	 				=> 'hero.html',
+									'carousel' 				=> 'carousel.html',
+									'marketing-alternate'	=> 'marketing-alternate.html',
+									'signin' 				=> 'signin.html',
+									'starter-template'		=> 'starter-template.html',
+									'enrollment'			=> 'Enrollment.html',
+									'staff'					=> 'staff.html'
                                 ),             
 
         );     
