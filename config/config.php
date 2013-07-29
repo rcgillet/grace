@@ -35,7 +35,8 @@ class config {
 									'signin' 				=> 'signin.html',
 									'starter-template'		=> 'starter-template.html',
 									'enrollment'			=> 'Enrollment.html',
-									'staff'					=> 'staff.html'
+									'staff'					=> 'staff.html',
+									'preschool'				=> 'preschool.html'
                                 ),             
 
         );     

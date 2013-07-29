@@ -39,7 +39,7 @@ class main extends BaseClass {
 					$pageName = 'carousel';
 					break;
 				case '4':
-					$pageName = 'hero';				
+					$pageName = 'preschool';				
 					break;
 				case '5':
 					$pageName = 'enrollment';				
