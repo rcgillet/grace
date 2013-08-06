@@ -36,7 +36,10 @@ class config {
 									'starter-template'		=> 'starter-template.html',
 									'enrollment'			=> 'Enrollment.html',
 									'staff'					=> 'staff.html',
-									'preschool'				=> 'preschool.html'
+									'preschool'				=> 'preschool.html', 
+                                    'elementary'            => 'elementary.html',
+                                    'highSchool'            => 'highSchool.html',
+                                    'general'               => 'generalInfo.html'
                                 ),             
 
         );     

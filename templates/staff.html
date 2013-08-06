@@ -38,75 +38,127 @@
           </a>
           <a class="brand" href="/grace/?page=1">Grace Christian School</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-				<li class="active"><a href="/grace/?page=2">Home</a></li>
-				<li><a href="http://www.facebook.com/gcsdefenders">Current News</a></li>
-				<li><a href="#contact">General Info</a></li>
-				<li><a href="#contact">Contact Us</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#contact">Location</a></li>
-						<li><a href="#contact">Calendar</a></li>
-						<li><a href="#contact">Sports</a></li>
-						<li><a href="#contact">Pre-School</a></li>
-						<li><a href="#contact">K-12</a></li>
-						<li><a href="#contact">Parent Info</a></li>
-						<li><a href="#contact">Students</a></li>
-						<li><a href="#contact">GCS Staff</a></li>
-					</ul>
-				</li>
-            </ul>
-			<!-- =========Login========== -->
-			<ul class="nav pull-right">
-				<li class="dropdown">
-					<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-					<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-						<form method="post" action="login" accept-charset="UTF-8">
-							<input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
-							<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
-							<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
-							<label class="string optional" for="user_remember_me"> Remember me</label>
-							<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">						
-						</form>
-					</div>
-				</li>
-			</ul>
-          </div><!--/.nav-collapse -->
+					  <ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <b class="caret"></b></a>
+						  <ul class="dropdown-menu">
+							<li><a href="/grace/?page=8">General Information</a></li>
+							<li><a href="#">Parent Information</a></li> 
+							<li><a href="http://www.facebook.com/gcsdefenders">Current News</a></li>
+							<li><a href="#">Location</a></li> 					
+						  </ul>
+						</li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Students <b class="caret"></b></a>
+						  <ul class="dropdown-menu">
+								<li><a href="/grace/?page=4">Pre-School</a></li>
+								<li><a href="/grace/?page=5">Elementary</a></li>                   
+								<li><a href="/grace/?page=6">High School</a></li> 
+							</ul>
+						</li>
+						<li><a href="/grace/?page=2">Staff</a></li>
+						<li><a href="#contact" role="button" data-toggle="modal">Contact</a></li>
+					  </ul>					
+					  <!-- =========Login========== -->
+						<ul class="nav pull-right">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+								<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+									<form method="post" action="login" accept-charset="UTF-8">
+										<input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+										<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+										<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+										<label class="string optional" for="user_remember_me"> Remember me</label>
+										<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">						
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->	
         </div>
       </div>
     </div>
+
+    <!-- Modal Form -->
+		<div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			  <h3 id="myModalLabel">Contact Us</h3>
+			</div>
+			<div class="modal-body">
+			  <form class="form-horizontal" name="contactForm" method="post" action="includes/emailForm.php">
+				<!-- Text input-->
+				<div class="control-group">
+				  <label class="control-label" for="Email">Email:</label>
+				  <div class="controls">
+					<input id="email" name="email" type="text" placeholder="" class="input-large">
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+				  <label class="control-label" for="name">Name:</label>
+				  <div class="controls">
+					<input id="name" name="name" type="text" placeholder="" class="input-large">
+					
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="control-group">
+				  <label class="control-label" for="phoneNumber">Phone Number:</label>
+				  <div class="controls">
+					<input id="phoneNumber" name="phoneNumber" type="text" placeholder="" class="input-large">
+					
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="control-group">
+				  <label class="control-label" for="comment">Comment/Question</label>
+				  <div class="controls">                     
+					<textarea id="comment" name="comment"></textarea>
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Close</button>
+				  <input type="submit" value="Submit" class="btn btn-primary">
+				</div>
+			  </form>
+			</div>					
+		</div>
 
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Grace Christian School</h1>
-        <p>.... assisting the home and church, provides a nurturing, Christ-centered, spiritual, academic and physical atmosphere to produce disciples who will have a transforming impact on their world.</p>
-        <p><a class="btn btn-primary btn-large btn-grace">Learn more &raquo;</a></p>
+        <p>"To know Jesus Christ and make Him known. Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent" (John 17:3, NIV)</p>        
       </div>
 
       <!-- Example row of columns -->
       <div class="row-fluid">
+      	<h2>Office Staff</h2>
       	<ul class="thumbnails">
       		<li class="span3"> 
 				<div class="thumbnail staffProfile">
-			        <img class="rounded staffPic" src="img/sharonJoke.jpg" alt="">	    
+			        <img class="rounded staffPic" src="img/staffPics/sharon.jpg" alt="">	    
 			    	<strong style="font-size:1.2em;">Sharon Gamber</strong>
-			        <p class='position'><em>Principal</em><br>
+			        <p class='position'><em>Administrator, Middleschool Math</em><br>
 			        <br>
 			        </p>		       
 				  <div class="modal hide" id="sharon" style="display: none;">
 				    <div class="modal-header">
 				      <button type="button" class="close" data-dismiss="modal">×</button>
 				      <h2>Sharon Gamber</h2>
-					  Principal
+					  Administrator, Middleschool Math
 				    </div>
 				    <div class="modal-body">
-				      <div class="span3 pull-left"><img class="rounded" src="/media/officeofthepresident/imgs/officeofthepresidentimgs/execstaffresize/resize_Gilbertson, Eric 1-lpr.jpg" alt=""></div>
-				      <p><strong>Phone:</strong> (989) 964-4041</p>
-				      <p><strong>Email:</strong> <a href="mailto:erg@svsu.edu">erg@svsu.edu</a></p>
-				      <p>Principal<br>Grace Christian School<br></p>
+				      <p><strong>Education:</strong> B.S. in Elementary Education (minor in Bible), Pensacola Christian College; M.Ed. from University of Phoenix</p>
+				      <p><strong>Verse: </strong>May the words of my mouth and the mediation of my heart be pleasing in your sight, O LORD, my Rock and my Redeemer (Psalms 19:14)</p>
+				      <p><strong>Philosophy: </strong>I don’t remember ever wanting to do anything more than teach—It is who God made me to be! My passion is to enable students to find their giftedness and use it for God’s glory.</p>
 				    </div>
 				    <div class="modal-footer">
 				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
@@ -117,57 +169,289 @@
 			</li>
 			<li class="span3"> 
 				<div class="thumbnail staffProfile">
-			        <img class="rounded staffPic" src="img/sharonJoke.jpg" alt="">	    
-			    	<strong style="font-size:1.2em;">Sharon Gamber</strong>
-			        <p class='position'><em>Principal</em><br>
+			        <img class="rounded staffPic" src="img/staffPics/mike.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mike Iseman</strong>
+			        <p class='position'><em>Assistant Principal, Secondary Science and History</em><br>
 			        <br>
 			        </p>		       
-				  <div class="modal hide" id="sharon" style="display: none;">
+				  <div class="modal hide" id="mike" style="display: none;">
 				    <div class="modal-header">
 				      <button type="button" class="close" data-dismiss="modal">×</button>
-				      <h2>Sharon Gamber</h2>
-					  Principal
+				      <h2>Mike Iseman</h2>
+					  Assistant Principal, Secondary Science and History
 				    </div>
 				    <div class="modal-body">
-				      <div class="span3 pull-left"><img class="rounded" src="/media/officeofthepresident/imgs/officeofthepresidentimgs/execstaffresize/resize_Gilbertson, Eric 1-lpr.jpg" alt=""></div>
-				      <p><strong>Phone:</strong> (989) 964-4041</p>
-				      <p><strong>Email:</strong> <a href="mailto:erg@svsu.edu">erg@svsu.edu</a></p>
-				      <p>Principal<br>Grace Christian School<br></p>
+				      <p><strong>Education:</strong> B.S. in Professional Biology from Central Michigan University, M.A. in Practical Theology from Regent University, M.Ed. in Christian School Administration from Regent University</p>
+				      <p><strong>Philosophy: </strong>The foundation of Christian Education is rooted in the perfect Word of God found in the Holy Scriptures. Contemporary Christian education must train student’s to “think like Jesus”, for 1 John 2:6 states “…the one who says he abides in Him ought himself to walk in the same manner as He walked” (NASB). Favorite verse is Gal. 2:20 "I have been crucified with Christ; and it is no longer I who live, but Christ lives in me; and the life which I now live in the flesh I live by faith in the Son of God, who loved me and gave Himself up for me." (NASB)</p>
 				    </div>
 				    <div class="modal-footer">
 				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
 				    </div>
 				  </div>
-				  <a class="btn" data-toggle="modal" href="#sharon" data-original-title="">More Info</a>		   
+				  <a class="btn" data-toggle="modal" href="#mike" data-original-title="">More Info</a>		   
 			    </div>
 			</li>
 			<li class="span3"> 
 				<div class="thumbnail staffProfile">
-			        <img class="rounded staffPic" src="img/sharonJoke.jpg" alt="">	    
-			    	<strong style="font-size:1.2em;">Sharon Gamber</strong>
-			        <p class='position'><em>Principal</em><br>
+			        <img class="rounded staffPic" src="img/noPhoto.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Lisa Saenz</strong>
+			        <p class='position'><em>Hot Lunch Supervisor</em><br>
+			        <br>
+			        </p>				  	   
+			    </div>
+			</li>
+		</ul>
+		<h2>Elementary Teachers</h2>
+		<ul class="thumbnails">
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/noPhoto.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Joy Pluta</strong>
+			        <p class='position'><em>Preschool</em><br>
 			        <br>
 			        </p>		       
-				  <div class="modal hide" id="sharon" style="display: none;">
+				  <div class="modal hide" id="joy" style="display: none;">
 				    <div class="modal-header">
 				      <button type="button" class="close" data-dismiss="modal">×</button>
-				      <h2>Sharon Gamber</h2>
-					  Principal
+				      <h2>Mrs. Joy Pluta</h2>
+					  Preschool
 				    </div>
 				    <div class="modal-body">
-				      <div class="span3 pull-left"><img class="rounded" src="/media/officeofthepresident/imgs/officeofthepresidentimgs/execstaffresize/resize_Gilbertson, Eric 1-lpr.jpg" alt=""></div>
-				      <p><strong>Phone:</strong> (989) 964-4041</p>
-				      <p><strong>Email:</strong> <a href="mailto:erg@svsu.edu">erg@svsu.edu</a></p>
-				      <p>Principal<br>Grace Christian School<br></p>
+				      <p><strong>Education:</strong> B.A. in Family Studies, Central Michigan University, Infant and Child CPR and Blood Borne Pathogens</p>
 				    </div>
 				    <div class="modal-footer">
 				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
 				    </div>
 				  </div>
-				  <a class="btn" data-toggle="modal" href="#sharon" data-original-title="">More Info</a>		   
+				  <a class="btn" data-toggle="modal" href="#joy" data-original-title="">More Info</a>		   
 			    </div>
 			</li>
-		</ul><!--T4 nav obj . Thumbnail Gallery --></div>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/ferris.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Leah Ferris</strong>
+			        <p class='position'><em>Kindergarten and First Grade</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="ferris" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Mrs. Leah Ferris</h2>
+					  Kindergarten and First Grade
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.S. in Elementary Education, minors in Math and Science, Saginaw Valley State University</p>
+				      <p><strong>Philosophy:</strong> I believe that a classroom should be a safe and loving environment where children can feel free to ask questions and learn.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#ferris" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/julie.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Julie Kreh</strong>
+			        <p class='position'><em>Second and Third Grades</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="julie" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Mrs. Julie Kreh</h2>
+					  Second and Third Grades
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> Bethany Bible College, B.A.in Education with a minor in Global Ministries. University of Michigan, M.A. Education (Major, Social Studies/Minor Language Arts)</p>
+				      <p><strong>Verse:</strong> Lamentations 3:22-23 Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.</p>
+				      <p><strong>Philosophy:</strong> I chose a career in education because I love to learn! One of my goals as a teacher is to reproduce that same desire in my students. I believe that in the classroom, children should be doing the real work of scientists, authors, mathematicians, artists, and explorers. My great desire is that my students will grow in wisdom, understanding God's truth and their part in bringing His kingdom to earth. "Intelligence plus character: that is the goal of true education." Martin Luther King, Jr.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#julie" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/merchant.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Brenda Merchant</strong>
+			        <p class='position'><em>Fourth and Fifth Grades</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="merchant" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Mrs. Brenda Merchant</h2>
+					  Fourth and Fifth Grades
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.S. in Elementary Education from Bryan College</p>
+				      <p><strong>Verse:</strong> Jeremiah 29:11 For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future.</p>
+				      <p><strong>Philosophy:</strong> My goal in being a teacher in a Christian school is to not only encourage students to be the best students they can be, but also the best Christ-like person they can be, now and in the future.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#merchant" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/clark.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Carole Clark</strong>
+			        <p class='position'><em>Elementary Music</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="clark" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Mrs. Carole Clark</h2>
+					  Elementary Music
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.S. in Ed. and M.S. in Ed. from Eastern Illinois University.</p>
+				      <p><strong>Verse:</strong> "Oh come, let us sing to the Lord; let us make a joyful noise to the rock of our salvation." (Psalm 95:1)</p>
+				      <p><strong>Philosophy:</strong> God gave us voices and the ability to play instruments to praise him. If I can make a child love music and use it for loving God, I've done my job.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#clark" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/anna.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Anna Grzenia</strong>
+			        <p class='position'><em>Elementary German</em><br>
+			        <br>
+			        </p>		       				  	   
+			    </div>
+			</li>
+		</ul>
+		<h2>Secondary Teachers</h2>
+		<ul class="thumbnails">
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/natalie.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Miss Natalie Hess</strong>
+			        <p class='position'><em>Secondary English and Math</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="natalie" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Miss Natalie Hess</h2>
+					  Secondary English and Math
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.S. in Secondary Education, Hyles-Anderson College</p>
+				      <p><strong>Verse:</strong> "Teach me to do your will, for you are my God; may your good Spirit lead me on level ground." (Psalm 143:10)</p>
+				      <p><strong>Philosophy:</strong> I had a college professor who made the statement: "Students will not care how much you know, until they know how much you care." I hope to communicate to my students that I truly care about them and want what is best for them. In return, I hope they will care about the things that I am teaching them and will one day realize their potential in God's service at home, in their community, and in the work force.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#natalie" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/pastor.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Pastor Terry Kuhns</strong>
+			        <p class='position'><em>Secondary Bible</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="pastor" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Pastor Terry Kuhns</h2>
+					  Secondary Bible
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.A. in English; M.A. in Theology Moody Theological Seminary, Grand Rapids Theological Seminary</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#pastor" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/david.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Pastor David Hansen</strong>
+			        <p class='position'><em>Secondary Bible</em><br>
+			        <br>
+			        </p>		       
+				  <div class="modal hide" id="david" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Pastor David Hansen</h2>
+					  Secondary Bible
+				    </div>
+				    <div class="modal-body">
+				      <p><strong>Education:</strong> B.A. History from Pensacola Christian College</p>
+				      <p><strong>Verse:</strong> "What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things. I consider them garbage, that I may gain Christ." (Philippians 3:8)</p>
+				      <p><strong>Philosophy:</strong> Teaching is instilling God's truth and developing His love in students, that they might build their lives on the foundation of Jesus Christ and reach out in love to a hurting world.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#david" data-original-title="">More Info</a>		   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/staffPics/john.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mr. John Gamber</strong>
+			        <p class='position'><em>Cooking and Baking</em><br>
+			        <br>
+			        </p>
+			      <div class="modal hide" id="john" style="display: none;">
+				    <div class="modal-header">
+				      <button type="button" class="close" data-dismiss="modal">×</button>
+				      <h2>Mr. John Gamber</h2>
+					  Cooking and Baking
+				    </div>
+				    <div class="modal-body">
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#" class="btn" data-dismiss="modal" data-original-title="">Close</a>
+				    </div>
+				  </div>
+				  <a class="btn" data-toggle="modal" href="#john" data-original-title="">More Info</a>
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/noPhoto.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Julie Kuhns</strong>
+			        <p class='position'><em>Yearbook</em><br>
+			        <br>
+			        </p>		       	   
+			    </div>
+			</li>
+			<li class="span3"> 
+				<div class="thumbnail staffProfile">
+			        <img class="rounded staffPic" src="img/noPhoto.jpg" alt="">	    
+			    	<strong style="font-size:1.2em;">Mrs. Tracey Delong</strong>
+			        <p class='position'><em>Personal Finance</em><br>
+			        <br>
+			        </p>		       
+			    </div>
+			</li>
+		</ul><!--T4 nav obj . Thumbnail Gallery -->
+	</div>
 
       <hr>
 

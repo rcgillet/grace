@@ -38,8 +38,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="/grace/?page=1">Grace Christian School</a>
-					<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-					<div class="nav-collapse collapse">
+          <div class="nav-collapse collapse">
 					  <ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
 						<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -57,7 +56,7 @@
 						  <ul class="dropdown-menu">
 							<li><a href="/grace/?page=4">Pre-School</a></li>
 							<li><a href="/grace/?page=5">Elementary</a></li>                   
-							<li><a href="/grace/?page=6">High School</a></li>                 
+							<li><a href="/grace/?page=6">High School</a></li>            
 						  </ul>
 						</li>
 						<li><a href="/grace/?page=2">Staff</a></li>
@@ -82,7 +81,8 @@
         </div>
       </div>
     </div>
-		<!-- Modal Form -->
+
+    <!-- Modal Form -->
 		<div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
 			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -141,30 +141,75 @@
 
       <!-- Example row of columns -->
       <div class="row">
-				<div class="span8">
-					<div id="myCarousel" class="carousel slide">
-					  <ol class="carousel-indicators">
-					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#myCarousel" data-slide-to="1"></li>
-					    <li data-target="#myCarousel" data-slide-to="2"></li>
-					  </ol>
-					  <!-- Carousel items -->
-					  <div class="carousel-inner">
-					    <div class="active item">
-					    	<img src="img/cropped1.jpg" alt="">
+      	<div class="span8" id='videoPlayer'>
+      		<h2>Student Testimony</h2>
+      		<iframe width="80%" height="300" src="//www.youtube.com/embed/vg7XFPm9dkw" frameborder="0" allowfullscreen></iframe>
+      		<br /><br />
+      		<h2>Who We Are</h2>
+					<p>Grace Christian School is the only private, non-denominational Christian School in the Saginaw area. Founded in 1974 as a ministry of Grace Baptist Church, we educate children from 3 year-old preschool through twelfth grade with a Biblical world view. Our students and staff come from over 15 different area churches. We are located at 4619 Mackinaw Road in Saginaw Township. Our mission, “To know Jesus Christ and make Him known” is accomplished through biblically-integrated courses, excellence in academic endeavors, and practical ministry opportunities.</p>
+					<br /><br />
+					<h2>Enrollment</h2>
+					<div class='row'>
+						<div class="accordion span8" id="accordion2">
+					    <div class="accordion-group">
+							  <div class="accordion-heading">
+							    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								  	Enrollment Process
+					  	    </a>
+							  </div>
+							  <div id="collapseOne" class="accordion-body collapse">
+				  		    <div class="accordion-inner">
+				  		    	<div class="row">
+					  		    	<div class="span1">
+					  		    		<strong>1) </strong>
+					  		    	</div>
+					  		    	<div class="span6">
+					  		    		Fill out the admissions form, and give the family reference form to your pastor, youth pastor, or Sunday school teacher to fill out.
+					  		    	</div>
+				  		    	</div>
+				  		    	<br />
+				  		    	<div class="row">
+					  		    	<div class="span1">
+					  		    		<strong>2) </strong>
+					  		    	</div>
+					  		    	<div class="span6">
+					  		    		Turn in admissions form with enrollment fee; make an appointment to meet with the principal. Students are encouraged to come; 7-12 graders are required to come.
+					  		    	</div>
+				  		    	</div>
+				  		    	<br />
+				  		    	<div class="row">
+					  		    	<div class="span1">
+					  		    		<strong>3) </strong>
+					  		    	</div>
+					  		    	<div class="span6">
+					  		    		Read the student handbook and discuss it with your child(ren) in an age-appropriate manner.
+					  		    	</div>
+				  		    	</div>
+				  		    	<br />
+				  		    	<div class="row">
+					  		    	<div class="span1">
+					  		    		<strong>4) </strong>
+					  		    	</div>
+					  		    	<div class="span6">
+					  		    		The meeting with the principal will give you opportunity to ask questions and get to know who we are, take a tour of the school, determine if the student will require admissions testing, decide on billing options, and discuss expectations.
+					  		    	</div>
+				  		    	</div>
+				  		    	<br />
+				  		    	<div class="row">
+					  		    	<div class="span1">
+					  		    		<strong>5) </strong>
+					  		    	</div>
+					  		    	<div class="span6">
+					  		    		An additional conference or conversation may be required after testing or receipt of school records. All new students are accepted with a 9 week probation period; tuition is non-refundable.
+					  		    	</div>
+				  		    	</div>
+				  		    	<br />
+							    </div>
+							  </div>
 					    </div>
-					    <div class="item">
-					    	<img src="img/preschoolField.jpg" alt="">
-					    </div>
-					    <div class="item">
-					    	<img src="img/preschoolSlide.jpg" alt="">
-					    </div>
+					   </div>
 					  </div>
-					  <!-- Carousel nav -->
-					  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					</div>
-				</div>
+      	</div>
 				<div class="span3 pull-right pdfBox">
 					<h2>Documents</h2>
 					<a href="pdfs/GCS_KP-Overview.pdf" class="a-btn span3">
@@ -179,48 +224,33 @@
 					  <span class="a-btn-text">Preschool Fee Schedule</span> <br />
 					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
 					</a>
+					<a href="pdfs/GCS_AdmitApp_2013.pdf" class="a-btn span3">
+					  <span class="a-btn-text">K-12 Application</span> <br />
+					  <span class="a-btn-slide-text"><!-- Admissions events calendar --></span>
+					</a>
+					<a href="pdfs/GCS_ReferenceForm.pdf" class="a-btn span3">
+					  <span class="a-btn-text">Family/Student Reference Form</span> <br />
+					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
+					</a>
+					<a href="pdfs/GCS_FeeScheduleK-12.pdf" class="a-btn span3">
+					  <span class="a-btn-text">K-12 Fee Schedule</span> <br />
+					  <span class="a-btn-slide-text">New K-12 students get a 50% off tuition for this school year!</span>
+					</a>
+					<a href="pdfs/GCS_ReEnrollApp.pdf" class="a-btn span3">
+					  <span class="a-btn-text">Reenrollment Form</span> <br />
+					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
+					</a>
+					<a href="pdfs/GCS_KP-Overview.pdf" class="a-btn span3">
+					  <span class="a-btn-text">Scholarship Application</span> <br />
+					  <span class="a-btn-slide-text">Financial Aid is available based on financial need. Fill out the form and submit with appropriate documentation.</span>
+					</a>
+					<a href="pdfs/GCS_KP-Overview.pdf" class="a-btn span3">
+					  <span class="a-btn-text">School Brochure</span> <br />
+					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
+					</a>
 				</div>	
-				<div class="span12">
-					<h1>Preschool Program</h1>
-					<p>Children socialize and learn through a variety of age-appropriate activities, with an emphasis in the 4 yr. old program on Kindergarten readiness. Preschoolers are exposed daily to numbers, letters and other basic concepts. There will be a short seat work time each day, however, most learning will be done through play and age appropriate group activities. The 3 yr. old preschool meets Tuesday & Thursday mornings most years; 4 yr. old preschool meets Monday, Wednesday, and Friday mornings. Both offer optional afternoon care in years where the demand is sufficient.</p>
-					<hr>			
-				</div>
       </div>
-
-	  <h3>Times & Requirements</h3>
-	  <div class="row">
-	  <div class="accordion span12" id="accordion2">
-	    <div class="accordion-group">
-		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-			  Three-year-old Preschool
-	  	    </a>
-		  </div>
-		  <div id="collapseOne" class="accordion-body collapse">
-  		    <div class="accordion-inner">
-			  <strong>Time: </strong>Meets Tuesday and Thursday 8:30-12:00<br />
-			  <strong>Requirements: </strong>Three year-olds must be able to use the bathroom independently.
-		    </div>
-		  </div>
-	    </div>
-	    <div class="accordion-group">
-		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-			  Four-year-old Preschool
-		    </a>
-		  </div>
-		  <div id="collapseTwo" class="accordion-body collapse">
-		    <div class="accordion-inner">
-			  <strong>Time: </strong>Meets Monday, Wednesday, Friday from 8:30-12:00<br />
-			  <strong>Requirements: </strong>Four Year-olds must be 4 by September 1 allowing them to be old enough for Kindergarten the next year.
-		    </div>
-		  </div>
-	    </div>
-	  </div>
-	  </div>
-	  
       <hr>
-
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -245,16 +275,6 @@
     <script src="bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
-		<script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel({
-          	interval: 4000
-          })
-        })
-      }(window.jQuery)
-    </script>
 
   </body>
 </html>

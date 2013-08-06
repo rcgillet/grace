@@ -38,8 +38,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="/grace/?page=1">Grace Christian School</a>
-					<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-					<div class="nav-collapse collapse">
+          <div class="nav-collapse collapse">
 					  <ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
 						<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -55,10 +54,10 @@
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Students <b class="caret"></b></a>
 						  <ul class="dropdown-menu">
-							<li><a href="/grace/?page=4">Pre-School</a></li>
-							<li><a href="/grace/?page=5">Elementary</a></li>                   
-							<li><a href="/grace/?page=6">High School</a></li>                 
-						  </ul>
+								<li><a href="/grace/?page=4">Pre-School</a></li>
+								<li><a href="/grace/?page=5">Elementary</a></li>                   
+								<li><a href="/grace/?page=6">High School</a></li> 
+							</ul>
 						</li>
 						<li><a href="/grace/?page=2">Staff</a></li>
 						<li><a href="#contact" role="button" data-toggle="modal">Contact</a></li>
@@ -82,7 +81,8 @@
         </div>
       </div>
     </div>
-		<!-- Modal Form -->
+
+    <!-- Modal Form -->
 		<div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-header">
 			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -136,12 +136,12 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Grace Christian School</h1>
-        <p>"To know Jesus Christ and make Him known. Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent" (John 17:3, NIV)</p>          
+        <p>"To know Jesus Christ and make Him known. Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent" (John 17:3, NIV)</p>        
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-				<div class="span8">
+      	<div class="span8">
 					<div id="myCarousel" class="carousel slide">
 					  <ol class="carousel-indicators">
 					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -151,13 +151,13 @@
 					  <!-- Carousel items -->
 					  <div class="carousel-inner">
 					    <div class="active item">
-					    	<img src="img/cropped1.jpg" alt="">
+					    	<img src="img/highSchoolGirls.jpg" alt="">
 					    </div>
 					    <div class="item">
-					    	<img src="img/preschoolField.jpg" alt="">
+					    	<img src="img/kidsWithSchool.jpg" alt="">
 					    </div>
 					    <div class="item">
-					    	<img src="img/preschoolSlide.jpg" alt="">
+					    	<img src="img/prayingBySign.jpg" alt="">
 					    </div>
 					  </div>
 					  <!-- Carousel nav -->
@@ -167,58 +167,111 @@
 				</div>
 				<div class="span3 pull-right pdfBox">
 					<h2>Documents</h2>
-					<a href="pdfs/GCS_KP-Overview.pdf" class="a-btn span3">
-					  <span class="a-btn-text">Preschool Overview</span> <br />
+					<a href="pdfs/GCS_AdmitApp.pdf" class="a-btn span3">
+					  <span class="a-btn-text">K-12 Application</span> <br />
 					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
 					</a>
-					<a href="pdfs/GCS_PreschoolApp_2013.pdf" class="a-btn span3">
-					  <span class="a-btn-text">Preschool Application</span> <br />
-					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
+					<a href="pdfs/GCS_FeeScheduleK-12.pdf" class="a-btn span3">
+					  <span class="a-btn-text">K-12 Fee Schedule</span> <br />
+					  <span class="a-btn-slide-text">New K-12 students get a 50% off tuition for this school year</span>
 					</a>
 					<a href="pdfs/GCS_FeeSchedulePS.pdf" class="a-btn span3">
-					  <span class="a-btn-text">Preschool Fee Schedule</span> <br />
+					  <span class="a-btn-text">School Brochure</span> <br />
 					  <!-- <span class="a-btn-slide-text">Admissions events calendar</span> -->
 					</a>
 				</div>	
 				<div class="span12">
-					<h1>Preschool Program</h1>
-					<p>Children socialize and learn through a variety of age-appropriate activities, with an emphasis in the 4 yr. old program on Kindergarten readiness. Preschoolers are exposed daily to numbers, letters and other basic concepts. There will be a short seat work time each day, however, most learning will be done through play and age appropriate group activities. The 3 yr. old preschool meets Tuesday & Thursday mornings most years; 4 yr. old preschool meets Monday, Wednesday, and Friday mornings. Both offer optional afternoon care in years where the demand is sufficient.</p>
-					<hr>			
+					<h1>High School</h1>
+					<hr>
+					<h3>Biblical Worldview</h3>
+					<p>Realizing that the Word of God is the ultimate authority in the world, each class is taught from a Biblical perspective. Students are taught to compare and evaluate what they learn and hear to what the Bible says.</p>
+					<h3>Classes</h3>
+					<p>Students have all the traditional core classes that are typically offered in school—English, Science, History, Math, and Bible. Electives include but are not limited to PE, Personal finance, Cooking and Baking, and Computers.</p>
+					<h3>Block Scheduling</h3>
+					<p>High School students attend classes in blocks. Each block is two 50-minute class periods with a break in between. See sample Schedule: </p><br />
+					<div class="row">
+						<div class="accordion span12" id="accordion2">
+					    <div class="accordion-group">
+							  <div class="accordion-heading">
+							    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								  	Schedule
+					  	    </a>
+							  </div>
+							  <div id="collapseOne" class="accordion-body collapse">
+				  		    <div class="accordion-inner">
+								  	<table class="table table-striped table-bordered">
+											<caption>Schedule</caption>
+											  <thead>
+											    <tr>
+											      <th>Monday and Wednesdays</th>
+											      <th>Tuesdays and Thursdays</th>
+											      <th>Fridays-each class meets one hour</th>
+											    </tr>
+											  </thead>
+											  <tbody>
+											    <tr>
+											      <td>Algebra II<br />Electives</td>
+											      <td>Algebra II<br />Electives</td>
+											      <td>8:20-9:15 (m, w classes)<br />9:20-10:10 (t, th classes)</td>
+											    </tr>
+											    <tr>
+											      <td>US History<br />Electives</td>
+											      <td>English<br />Pre-Calculus</td>
+											      <td>10:15-11:05 (m, w classes)<br />11:10-12:00 (t, th classes)</td>						      
+											    </tr>
+											    <tr>
+											      <td>LUNCH</td>
+											      <td>LUNCH</td>
+											      <td>LUNCH</td>
+											    </tr>
+											    <tr>
+											      <td>Biology<br />Chemistry</td>
+											      <td>Bible</td>
+											      <td>12:30-1:20 Chapel<br />1:25-2:15 (m, w classes)</td>
+											    </tr>
+											    <tr>
+											      <td>Personal Finance<br />Study Hall</td>
+											      <td>PE</td>
+											      <td>2:20-3:10 Study Hall</td>
+											    </tr>
+											  </tbody>
+											</table>
+							    </div>
+							  </div>
+					    </div>
+					  </div>
+					 </div>					
+				</div>
+				<div class="span12">
+					<h3>Student Opportunities</h3>
+				</div>
+				<div class="span4">
+					<a class="caption" href="#" data-title="Online Classes" data-description="We are setting up our computer lab with 11 brand new HP All-in-One Computers with Windows 8 and Touchscreens!  For the 2013-14 school year we are implementing a partnership with Sevenstar Online Academy which will allow us to offer to our high school students a large variety of other electives—5 foreign languages, over 10 AP Classes, Photography, Game Design, ACT prep, Bible electives, and more!">
+						<div class="captionIntro">
+							<h2>Online Classes</h2>
+						</div>
+						<img src="img/computer.jpg" alt="Online Classes"/></a>
+      		<!-- <a href="#" id="onlineClasses" class="btn popPics" rel="popover" data-trigger="hover" data-placement="top" data-content="We are setting up our computer lab with 11 brand new HP All-in-One Computers with Windows 8 and Touchscreens!  For the 2013-14 school year we are implementing a partnership with Sevenstar Online Academy which will allow us to offer to our high school students a large variety of other electives—5 foreign languages, over 10 AP Classes, Photography, Game Design, ACT prep, Bible electives, and more!" data-original-title="Online Classes">
+      			<h2>Online Classes</h2>
+      			<img src="img/croppedParachuclass="img-polaroid" te.jpg" alt="" class="">
+      		</a> -->
+    		</div>	
+    		<div class="span4">
+					<a class="caption" href="#" data-title="Online Classes" data-description="In the fall we have a junior high( gr. 5-7) and varsity volleyball(gr. 7-12) team. We play other Christian schools, home-school groups, and some local public schools. In the spring of 2013-14 we will be forming our first track and field team.">
+						<div class="captionIntro">
+							<h2>Sports</h2>
+						</div>
+						<img src="img/hoverVolley.jpg" alt="Sports"/></a>
+				</div>
+				<div class="span4">
+					<a class="caption" href="#" data-title="Online Classes" data-description="An important part of Christian growth is learning to serve others. Students participate is various kinds of service which have included serving at the Rescue Mission and Eastside Soup kitchens, passing out food, cleaning up neighborhoods, visiting shut-ins, yard work, etc.">
+						<div class="captionIntro">
+							<h2>Ministry Opportunities</h2>
+						</div>
+						<img src="img/service.jpg" alt="Serving"/></a>
 				</div>
       </div>
 
-	  <h3>Times & Requirements</h3>
-	  <div class="row">
-	  <div class="accordion span12" id="accordion2">
-	    <div class="accordion-group">
-		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-			  Three-year-old Preschool
-	  	    </a>
-		  </div>
-		  <div id="collapseOne" class="accordion-body collapse">
-  		    <div class="accordion-inner">
-			  <strong>Time: </strong>Meets Tuesday and Thursday 8:30-12:00<br />
-			  <strong>Requirements: </strong>Three year-olds must be able to use the bathroom independently.
-		    </div>
-		  </div>
-	    </div>
-	    <div class="accordion-group">
-		  <div class="accordion-heading">
-		    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-			  Four-year-old Preschool
-		    </a>
-		  </div>
-		  <div id="collapseTwo" class="accordion-body collapse">
-		    <div class="accordion-inner">
-			  <strong>Time: </strong>Meets Monday, Wednesday, Friday from 8:30-12:00<br />
-			  <strong>Requirements: </strong>Four Year-olds must be 4 by September 1 allowing them to be old enough for Kindergarten the next year.
-		    </div>
-		  </div>
-	    </div>
-	  </div>
-	  </div>
-	  
       <hr>
 
       <!-- FOOTER -->
@@ -245,7 +298,7 @@
     <script src="bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
     <script src="bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
     <script src="bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
-		<script>
+    <script>
       !function ($) {
         $(function(){
           // carousel demo

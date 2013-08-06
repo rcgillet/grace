@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Grace Baptist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="flatstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link href="flatstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-grace navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/grace/?page=1">Grace Christian School</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/grace/?page=2">Home</a></li>
+              <li><a href="http://www.facebook.com/gcsdefenders">Current News</a></li>
+              <li><a href="#">General Info</a></li>       
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Calendar</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Pre-School</a></li>
+                  <li><a href="#">K-12</a></li>
+                  <li><a href="#">Parent Info</a></li>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">GCS Staff</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact" role="button" data-toggle="modal">Contact</a></li>
+            </ul>
+
+        <!-- Modal Form -->
+        <div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Modal header</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" name="contactForm" method="post" action="includes/emailForm.php">
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+              <input id="email" name="email" type="text" placeholder="" class="input-large">
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="name">Name:</label>
+              <div class="controls">
+              <input id="name" name="name" type="text" placeholder="" class="input-large">
+              
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="phoneNumber">Phone Number:</label>
+              <div class="controls">
+              <input id="phoneNumber" name="phoneNumber" type="text" placeholder="" class="input-large">
+              
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="control-group">
+              <label class="control-label" for="comment">Comment/Question</label>
+              <div class="controls">                     
+              <textarea id="comment" name="comment"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              <input type="submit" value="Sumbit">
+            </div>
+            </form>
+          </div>          
+        </div>
+      <!-- =========Login========== -->
+      <ul class="nav pull-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+            <form method="post" action="login" accept-charset="UTF-8">
+              <input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+              <input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+              <input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+              <label class="string optional" for="user_remember_me"> Remember me</label>
+              <input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">            
+            </form>
+          </div>
+        </li>
+      </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Grace Christian School</h1>
+        <p>.... assisting the home and church, provides a nurturing, Christ-centered, spiritual, academic and physical atmosphere to produce disciples who will have a transforming impact on their world.</p>        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+    <div class="span8">
+      <h1>Preschool Program</h1>
+      <p>Children socialize and learn through a variety of age-appropriate activities, with an emphasis in the 4 yr. old program on Kindergarten readiness. Preschoolers are exposed daily to numbers, letters and other basic concepts. There will be a short seat work time each day, however, most learning will be done through play and age appropriate group activities. The 3 yr. old preschool meets Tuesday & Thursday mornings most years; 4 yr. old preschool meets Monday, Wednesday, and Friday mornings. Both offer optional afternoon care in years where the demand is sufficient.</p>
+      <hr>      
+    </div>
+    <div class="span3 pull-right well pdfBox">
+      <ul>
+        <li><a href="pdfs/GCS_KP-Overview.pdf">Preschool Overview</a></li>
+        <li><a href="pdfs/GCS_PreschoolApp_2013.pdf">Preschool Application</a></li>
+        <li><a href="pdfs/GCS_FeeSchedulePS">Preschool Fee Schedule</a></li>
+      </ul>
+    </div>    
+      </div>
+
+    <h3>Times & Requirements</h3>
+    <div class="row">
+    <div class="accordion span8" id="accordion2">
+      <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Three-year-old Preschool
+          </a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse in">
+          <div class="accordion-inner">
+        <strong>Time: </strong>Meets Tuesday and Thursday 8:30-12:00<br />
+        <strong>Requirements: </strong>Three year-olds must be able to use the bathroom independently.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Four-year-old Preschool
+        </a>
+      </div>
+      <div id="collapseTwo" class="accordion-body collapse">
+        <div class="accordion-inner">
+        <strong>Time: </strong>Meets Monday, Wednesday, Friday from 8:30-12:00<br />
+        <strong>Requirements: </strong>Four Year-olds must be 4 by September 1 allowing them to be old enough for Kindergarten the next year.
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+      <hr>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>If you have any questions, please contact us at <a href="mailto:grace_christian_defenders@yahoo.com?subject=Website Inquiry">Grace_Christian_Defenders@yahoo.com</a> or call us at 989-793-2129</p>
+      </footer>
+
+    </div> <!-- /container -->
+  <hr>
+
+  <!-- FOOTER -->
+  <div class='container'>
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>If you have any questions, please contact us at <a href="mailto:grace_christian_defenders@yahoo.com?subject=Website Inquiry">Grace_Christian_Defenders@yahoo.com</a> or call us at 989-793-2129</p>
+    </footer> 
+  </div>
+      <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->    
+    <script src="bootstrap/docs/assets/js/jquery.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-button.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

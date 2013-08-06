@@ -42,14 +42,17 @@ class main extends BaseClass {
 					$pageName = 'preschool';				
 					break;
 				case '5':
-					$pageName = 'enrollment';				
+					$pageName = 'elementary';				
 					break;
 				case '6':
-					$pageName = 'starter-template';				
+					$pageName = 'highSchool';				
 					break;				
 				case '7':
 					$pageName = 'signin';				
-					break;				
+					break;
+                case '8':
+                    $pageName = 'general';     
+                    break;	
 				default:
 					$pageName = 'index';									
 			}
